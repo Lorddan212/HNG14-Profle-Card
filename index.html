@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daniel J Profile Card</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<article data-testid="test-profile-card" class="card">
+
+  <!-- Avatar -->
+  <figure class="avatar-container">
+    <img 
+      src="img/Dan.jpg"
+      alt="Portrait of Daniel J"
+      data-testid="test-user-avatar"
+      class="avatar"
+    />
+    <figcaption class="visually-hidden">User profile photo</figcaption>
+  </figure>
+
+  <div class="content">
+
+    <!-- Name -->
+    <header>
+      <h2 data-testid="test-user-name">Daniel Jegbefumhen</h2>
+    </header>
+
+    <!-- Bio -->
+    <p data-testid="test-user-bio">
+      Frontend developer crafting modern, responsive, and accessible digital experiences with clean UI and smooth interactions.
+    </p>
+
+    <!-- Time -->
+    <p class="time-wrapper">
+      <span>Current Time:</span>
+      <span 
+        data-testid="test-user-time" 
+        id="time"
+        aria-live="polite"
+        class="time"
+      ></span>
+    </p>
+
+    <!-- Social Links -->
+    <nav data-testid="test-user-social-links" aria-label="Social links">
+      <ul class="socials">
+        <li>
+          <a href="https://x.com/lorddan212"
+             target="_blank" rel="noopener noreferrer"
+             data-testid="test-user-social-twitter">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Lorddan212"
+             target="_blank" rel="noopener noreferrer"
+             data-testid="test-user-social-github">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/daniel-jegbefumhen-944aa9156/"
+             target="_blank" rel="noopener noreferrer"
+             data-testid="test-user-social-linkedin">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hobbies -->
+    <section>
+      <h3>Hobbies</h3>
+      <ul data-testid="test-user-hobbies" class="tag-list">
+        <li>Coding Personal Projects</li>
+        <li>Exploring UI/UX design trends</li>
+        <li>Reading Tech Blogs and Tutorials</li>
+        <li>Learning New Programming Languages</li>
+        <li>Contributing To Open-Source Projects</li>
+        <li>Solving Coding Challenges</li>
+        <li>Watching Web Development Tutorials</li>
+      </ul>
+    </section>
+
+    <!-- Dislikes -->
+    <section>
+      <h3>Dislikes</h3>
+      <ul data-testid="test-user-dislikes" class="tag-list">
+        <li>Slow-Loading Websites</li>
+        <li>Browser Compatibility Issues</li>
+        <li>Poorly Structured Code</li>
+        <li>Unresponsive Design Layouts</li>
+        <li>Outdated Web Technologies</li>
+      </ul>
+    </section>
+
+  </div>
+
+</article>
+
+<script src="script.js"></script>
+</body>
+</html>
