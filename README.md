@@ -12,7 +12,7 @@ A responsive and accessible Profile Card built with HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-[[Deployed link]](https://hng-14-profle-card.vercel.app/)
+[https://hng-14-profle-card.vercel.app/]
 
 ## Run Locally
 
